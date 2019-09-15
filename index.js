@@ -27,15 +27,15 @@ export default class OptionSelector extends React.Component {
           this.setState({ selectedOption: item }, () => {
             this.props.onPress(this.state.selectedOption);
           });
-          const soundObject = new Audio.Sound();
-          try {
-            await soundObject.loadAsync(
-              require("./assets/Sounds/popSound.mp3")
-            );
-            await soundObject.playAsync();
-          } catch (error) {
-            console.log(error);
-          }
+          // const soundObject = new Audio.Sound();
+          // try {
+          //   await soundObject.loadAsync(
+          //     require("./assets/Sounds/popSound.mp3")
+          //   );
+          //   await soundObject.playAsync();
+          // } catch (error) {
+          //   console.log(error);
+          // }
         }}
       >
         <View
